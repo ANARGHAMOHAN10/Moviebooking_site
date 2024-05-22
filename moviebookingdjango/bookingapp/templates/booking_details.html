@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> </title>
+<style>
+    .wrapper {
+            text-align: center;
+            width: 600px; 
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(111, 242, 74, 0.7);
+        }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+    <p>Booking ID : <b>{{ booking_data.id }}</b></p>
+    <p>Movie : {{ booking_data.movie.title }}</p>
+    <p>Date : {{ booking_data.show_date }}</p>
+    <p>Time : {{ booking_data.booking_time }}</p>
+    <p>Seats : {{ booking_data.seats_booked }}</p>
+<!-- Display the QR code using the provided URL -->
+<img src="media/{{ booking_data.booking_qr }}" alt="Booking QR Code" width="250" height="250">
+</div>
+
+
+</body>
+</html>

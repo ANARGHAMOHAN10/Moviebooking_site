@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+  <head>
+    <title>Ticket</title>
+  </head>
+  <body>
+    <p>
+      {{ booking.user.username }}, <br><br>
+      booking for the movie "<b>{{ movie.title }}</b>" has been confirmed. <br>
+       details of your booking: <br><br>
+      <b>Movie Information:</b> <br>
+      Show: {{ movie.movie_id }}  <br>
+      Booking ID: {{ booking.id }}  <br>
+      Movie Date: {{ booking.show_date }}  <br><br>
+      <b>Booking Details:</b> <br>
+      Number of Tickets: {{ booking.quantity }}  <br>
+      Amount Paid: {{ booking.total_price }} <br>
+      <b>Seats:</b> {{ booking.seats_booked }} <br><br>
+       <br>
+     
+    </p>
+  </body>
+</html>
